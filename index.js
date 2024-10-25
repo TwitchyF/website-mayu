@@ -19,7 +19,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var main = require('./routes/main'),
     api = require('./routes/api')
-
+app.enable("trust proxy");
+app.set("json spaces", 2);
 app.use(cors())
 app.use(secure)
 app.use(cookieParser());
@@ -35,10 +36,8 @@ app.use(function (err, req, res, next) {
   })
 
 app.listen(PORT, () => {
-    console.log(color("<=====[ START HOSTING ]=====>", 'red'));
-    console.log(color("Server running on port " + PORT, 'white'));
+  console.log(`Server is running on port ${PORT}`);
 });
-
 // red','green','yellow','blue','magenta','cyan','white']
 
 module.exports = app
