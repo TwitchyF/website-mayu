@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 809;  // Port otomatis dari environment
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 // Routes
-var main = require('./routes/main'),
-    api = require('./routes/api');
+var main = require('../routes/main'),
+    api = require('../routes/api');
 
 // Pengaturan dasar aplikasi
 app.set('trust proxy', true);
