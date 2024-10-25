@@ -1,4 +1,12 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "outputDirectory": "public",
   "routes": [
     {
       "src": "/static/(.*)",
@@ -6,6 +14,13 @@
         "cache-control": "public, max-age=31536000, immutable"
       },
       "dest": "/public/$1"
+    },
+    {
+      "src": "/.*",
+      "dest": "/"
     }
+  ],
+  "regions": [
+    "sfo1"
   ]
 }
