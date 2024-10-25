@@ -15,7 +15,9 @@ const PORT = process.env.PORT
 // Image title
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')))
 
-app.use(express.static("public"))
+// Menyajikan file statis dari folder "public"
+app.use("/static", express.static(path.join(__dirname, "public")));
+
 
 var main = require('./routes/main'),
     api = require('./routes/api')
