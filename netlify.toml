@@ -1,0 +1,6 @@
+[build]
+  functions = "functions"
+  publish = "public"  # Ganti jika kamu punya folder lain untuk frontend
+
+[dev]
+  functions = "functions"
