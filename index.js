@@ -10,12 +10,12 @@ cors = require('cors'),
 secure = require('ssl-express-www');
 
 //port
-const PORT = process.env.PORT || 8888
+const PORT = process.env.PORT
 
 // Image title
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')))
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static("public"))
 
 var main = require('./routes/main'),
     api = require('./routes/api')
