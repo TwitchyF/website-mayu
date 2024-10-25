@@ -1,12 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "outputDirectory": "public",
   "routes": [
     {
       "src": "/static/(.*)",
@@ -17,7 +10,7 @@
     },
     {
       "src": "/.*",
-      "dest": "/"
+      "dest": "/api/index.js"
     }
   ],
   "regions": [
