@@ -5,7 +5,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var favicon = require('serve-favicon');
 var createError = require('http-errors');
-var { color } = require('./library/color');
+var { color } = require('../library/color');
 const cors = require('cors');
 // const secure = require('ssl-express-www'); // Uncomment if needed
 
