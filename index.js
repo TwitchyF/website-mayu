@@ -37,10 +37,10 @@ app.use(function (err, req, res, next) {
   })
 
 // red','green','yellow','blue','magenta','cyan','white']
-app.listen(PORT, () => {
+/*app.listen(PORT, () => {
     console.log(color("<=====[ START HOSTING ]=====>",'red'))
     console.log(color("Server running on port " + PORT,'white'))
-})
+})*/
 
 module.exports = app
 
