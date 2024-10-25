@@ -9,6 +9,7 @@ var { color } = require('./library/color');
 cors = require('cors'),
 secure = require('ssl-express-www');
 
+//port
 const PORT = process.env.PORT || 8888
 
 // Image title
