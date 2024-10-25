@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "routes": [
     {
       "src": "/static/(.*)",
@@ -8,8 +7,5 @@
       },
       "dest": "/public/$1"
     }
-  ],
-  "regions": [
-    "sfo1"
   ]
 }
