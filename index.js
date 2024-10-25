@@ -9,7 +9,7 @@ var { color } = require('./library/color');
 cors = require('cors'),
 secure = require('ssl-express-www');
 
-const PORT = process.env.PORT || 8096 || 8182 || 1727
+const PORT = process.env.PORT || 8096
 
 // Image title
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')))
