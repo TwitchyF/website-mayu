@@ -20,8 +20,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 var main = require('./routes/main'),
     api = require('./routes/api')
 
-app.set('trust proxy', true);
-app.set("json spaces",2)
 app.use(cors())
 app.use(secure)
 app.use(cookieParser());
