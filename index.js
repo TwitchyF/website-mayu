@@ -1,6 +1,6 @@
 require('./settings')
 const express = require('express'); 
-const app = express();
+const app = express.Router();
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var favicon = require('serve-favicon');
@@ -37,9 +37,5 @@ app.use(function (err, req, res, next) {
   })
 
 // red','green','yellow','blue','magenta','cyan','white']
-app.listen(PORT, () => {
-    console.log(color("<=====[ START HOSTING ]=====>", 'red'));
-    console.log(color("Server running on port " + PORT, 'white'));
-});
 
 module.exports = app
