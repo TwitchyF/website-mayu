@@ -9,7 +9,7 @@ var { color } = require('./library/color');
 cors = require('cors'),
 secure = require('ssl-express-www');
 
-const PORT = process.env.PORT || 8080 || 5000 || 3000
+const PORT = process.env.PORT || 4543
 
 // Image title
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')))
@@ -37,10 +37,10 @@ app.use(function (err, req, res, next) {
   })
 
 // red','green','yellow','blue','magenta','cyan','white']
-/*app.listen(PORT, () => {
+app.listen(PORT, () => {
     console.log(color("<=====[ START HOSTING ]=====>",'red'))
     console.log(color("Server running on port " + PORT,'white'))
-})*/
+})
 
 module.exports = app
 
