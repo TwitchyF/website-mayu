@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauzi - Portofolio</title>
+    <!-- style clss -->
+    <link rel="stylesheet" href="/css/index-css/style.css"/>
+    <link rel="stylesheet" href="/css/galery-css/galery.css"/>
+    
+            <!-- ===== BOX ICONS ===== -->
+        <link
+        href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'
+        rel='stylesheet'>
+        
+  </head>
+  <body>
+        <div id="particles-js"></div>
+    <!-- HEADER --> 
+    <header class="burger-container">
+      <nav class="burger">
+        <div class="brand">
+          <a><img src="/images/index-img/logo.jpeg" /></a>
+        </div>
+        <div class="navigasi" id="nav-menu">
+        <ul class="nav_list">
+          <li><a class="nav_link"href="https://instagram.com">instagram</a></li>
+          <li><a class="nav_link"href="#">project</a></li>
+          <li><a class="nav_link"href="#">contact</a></li>
+          <li><a class="nav_link"href="#about">skill</a></li>
+<!--            <li><a class="nav_link"id="toggle-theme"><i class="bx bx-moon"></i></a></li> -->
+        </ul>
+        </div>
+        <div class="toggle-burger" id="burger">
+        <i class='bx bx-menu'></i>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- Kategori Filter -->
+    <div class="row">
+    <div class="category-container">
+        <button class="category-btn active" onclick="filterCategory('all')">All</button>
+        <button class="category-btn" onclick="filterCategory('pemandangan')">Lifestyle</button>
+        <button class="category-btn" onclick="filterCategory('game')">Game</button>
+        <button class="category-btn" onclick="filterCategory('foto')">Foto</button>
+        <button class="category-btn" onclick="filterCategory('video')">Video</button>
+    </div>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+        <!-- Pemandangan -->
+        <div class="gallery-item pemandangan">
+            <img src="/images/galery-img/cloud.jpg" alt="Pemandangan">
+        </div>
+        <div class="gallery-item pemandangan">
+            <img src="/images/galery-img/poster.jpg" alt="Pemandangan">
+        </div>
+
+        <!-- Game -->
+        <div class="gallery-item game">
+            <img src="/images/galery-img/game1.jpg" alt="Game">
+        </div>
+        <div class="gallery-item game">
+            <img src="/images/galery-img/game2.jpg" alt="Game">
+        </div>
+
+        <!-- Foto -->
+        <div class="gallery-item foto">
+            <img src="/images/galery-img/m1.jpg" alt="Foto">
+        </div>
+        <div class="gallery-item foto">
+            <img src="/images/galery-img/m2.jpg" alt="Foto">
+        </div>
+        <div class="gallery-item foto">
+            <img src="/images/galery-img/m3.jpg" alt="Foto">
+        </div>
+        <div class="gallery-item foto">
+            <img src="/images/galery-img/img.jpg" alt="Foto">
+        </div>
+        
+
+        <!-- Video -->
+        <div class="gallery-item video">
+            <video controls muted>
+                <source src="/images/galery-img/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="gallery-item video">
+            <video controls muted>
+                <source src="/images/galery-img/video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+   
+    </div>
+ <!-- BUTTON THEME  -->
+   <div class="button-theme">
+      <i id="toggle-theme"class="bx bx-moon"></i></div>
+    
+<!-- Footer Container -->
+<footer class="footer-container">
+  <div class="footer-content">
+    <p>&copy; 2024 Simple Portfolio. All rights reserved.</p>
+    <p>design By xZiyy</p>
+  </div>
+</footer>
+
+    <!-- SCRIPT -->
+   <script src="/js/index-js/main.js"></script>
+   <script src="/js/index-js/particles.js"></script>
+   <script src="/js/galery-js/galery.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="https://unpkg.com/scrollreveal"></script>
+  </br>
+</html>

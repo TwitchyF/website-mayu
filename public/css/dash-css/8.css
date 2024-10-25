@@ -1,0 +1,47 @@
+.btn-mel {
+  background-color: #151515;
+  border-color: #151515;
+  color: #fff;
+}
+.btn-mel.focus,
+.btn-mel:focus,
+.btn-mel:hover,
+.btn-mel:not(:disabled):not(.disabled).active,
+.btn-mel:not(:disabled):not(.disabled):active {
+  background-color: #f0f2ff;
+  border-color: #f0f2ff;
+  color: #151515;
+  box-shadow: 0 7px 23px -8px #f0f2ff;
+}
+.btn-outline-mel {
+  color: #fff;
+  border-color: #151515;
+}
+.btn-outline-mel.focus,
+.btn-outline-mel:focus,
+.btn-outline-mel:hover,
+.btn-outline-mel:not(:disabled):not(.disabled).active,
+.btn-outline-mel:not(:disabled):not(.disabled):active {
+  color: #fff;
+  border-color: #151515;
+  background-color: #151515;
+  box-shadow: 0 7px 23px -8px #151515;
+}
+.a-mel {
+  color: #151515;
+}
+.text-mel {
+  color: #151515 !important;
+}
+.error-mel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.error-mel h1 {
+  font-size: 148px;
+  color: #151515;
+}
+.error-mel a {
+  color: #151515;
+}

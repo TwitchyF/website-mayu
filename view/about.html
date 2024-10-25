@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #f5f5f5;
+        }
+        p {
+            line-height: 1.6;
+            color: #b0b0b0;
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #444;
+        }
+        .intro {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .intro h2 {
+            margin: 10px 0;
+            color: #f5f5f5;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .social-links a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0 10px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #333;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            background-color: #555;
+        }
+        .skills, .experience, .portfolio {
+            margin-top: 40px;
+        }
+        .skills h3, .experience h3, .portfolio h3 {
+            color: #f5f5f5;
+        }
+        
+.code-snippet {
+            background-color: #2e2e2e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: "Fira Code", monospace;
+            overflow-x: auto;
+            position: relative;
+        }
+        .code-snippet::before {
+            content: '/* Code snippet */';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #888;
+            font-size: 12px;
+        }
+        .code-snippet pre {
+            margin: 0;
+            padding: 0;
+        }
+        .code-snippet .comment {
+            color: #5c5c5c; /* Color for comments */
+        }
+        .code-snippet .keyword {
+            color: #a85917; /* Color for keywords */
+        }
+        .code-snippet .string {
+            color: #277131; /* Color for strings */
+        }
+        .code-snippet .variable {
+            color: #9cdcfe; /* Color for variables */
+        }
+        .section-title {
+            font-size: 1.5em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .experience ul, .portfolio ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .experience li, .portfolio li {
+            margin-bottom: 10px;
+        }
+        .portfolio-item {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+            width: 250px;
+            height: 150px;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+        .experience .skill-icons {
+            font-size: 20px;
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>About Me</h1>
+        <img src="images/index-img/img.jpeg" alt="Profile Picture" class="profile-pic">
+        
+        <div class="intro">
+            <h2>Hallo, aku adalah <strong>Aldi Fauzi</strong> 🌟</h2>
+            <p>seorang pelajar yang gemar tentang teknologi, dan dunia digital.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/xziyy__" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/ALDI33" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://youtube.com/xziyy__" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h3 class="section-title">🛠️ About My Skills</h3>
+            <p>Saya memiliki keterampilan dalam pengembangan web, pemrograman, desainer, dan juga beberapa bahasa berikut:</p>
+ 
+         <div class="code-snippet">
+            <pre>
+<span class="comment">// Info tentang Aldi Fauzi</span>
+<span class="keyword">const</span> name = <span class="string">'Aldi Fauzi'</span>;
+<span class="keyword">const</span> age = <span class="variable">16</span>;
+<span class="keyword">const</span> profession = <span class="string">'Software Engineering && Desainer'</span>;
+<span class="keyword">const</span> role = <span class="string">'AI Creator'</span>;
+
+<span class="keyword">const</span> skills = [
+    <span class="string">'JavaScript'</span>,
+    <span class="string">'CSS'</span>,
+    <span class="string">'HTML'</span>
+    <span class="string">'Adobe Photoshop'</span>
+    <span class="string">'Canva'</span>
+];
+
+console.log(<span class="string">`Nama: ${name}`</span>);
+console.log(<span class="string">`Usia: ${age}`</span>);
+console.log(<span class="string">`Profesi: ${profession}`</span>);
+console.log(<span class="string">`Peran: ${role}`</span>);
+console.log(<span class="string">`Keterampilan: ${skills.join(', ')}`</span>);
+            </pre>
+        </div>
+
+
+<div class="experience">
+    <h3 class="section-title">📚 Sedang Bersekolah</h3>
+    <li>Saya sedang menempuh pendidikan di SMK dengan fokus pada Desain Komunikasi Visual (DKV). Di samping itu, saya juga memperdalam keterampilan di bidang Rekayasa Perangkat Lunak (RPL) untuk mendukung kemampuan teknis dalam pengembangan perangkat lunak dan antarmuka digital yang kreatif.</li>
+    <li><strong>SMK Negeri 1 Kalanganyar</strong></br>Jurusan Desain Komunikasi Visual</li>
+    <ul>
+     <p> Harapan saya ke depannya menjadi seorang UI/UX designer yang handal, mampu menciptakan antarmuka pengguna yang intuitif, menarik secara visual, serta memberikan pengalaman pengguna yang optimal.</p>
+    </ul>
+</div>
+
+        <div class="portfolio">
+            <h3 class="section-title">🎨 Portfolio</h3>
+            <p>Berikut adalah beberapa contoh proyek yang telah saya kerjakan:</p>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250x150" alt="Proyek 1">
+                <div class="overlay">
+                    <a href="https://linktoproject1.com" target="_blank" style="color: #e0e0e0;">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/250x150" alt="Proyek 2">
+                <div class="overlay">
+                    <a href="https://linktoproject2.com" target="_blank" style="color: #e0e0e0;">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="others">
+            <h3 class="section-title">📝 Fun Fact</h3>
+            <p>Fun Fact Saya yaitu Tidak memiliki banyak teman, dan jarang sekali keluar rumah. dikatain tengkorak hidup opsional. meskipun itu bukan sebuah kebanggaan, saya sudah berusaha untuk hidup se maksimal mungkin.</p>
+        </div>
+    </div>
+</body>
+</html>
