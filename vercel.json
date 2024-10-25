@@ -1,5 +1,11 @@
 {
   "version": 2,
+  "builds": [
+    { 
+      "src": "*.js", 
+      "use": "@vercel/node" 
+    }
+  ],
   "routes": [
     {
       "src": "/static/(.*)",
@@ -9,8 +15,11 @@
       "dest": "/public/$1"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.js"
+      "src": "/.*",
+      "dest": "/"
     }
+  ],
+  "regions": [
+    "sfo1"
   ]
 }
